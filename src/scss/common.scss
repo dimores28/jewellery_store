@@ -1,0 +1,84 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.btn {
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.79;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: all 0.25s ease;
+}
+
+.btn-white {
+    color: #000;
+    background: #fff;
+    border: solid 1px #000;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background: #dfdfdf;
+        }
+    }
+
+    &:focus,
+    &:focus-visible {
+        border: solid 1px #242424;
+        background-color: #777;
+        outline: none;
+    }
+}
+
+.btn-black {
+    color: #fff;
+    background: #000;
+    border: solid 1px #fff;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background: #777777;
+        }
+    }
+
+    &:focus,
+    &:focus-visible {
+        border: solid 1px #fff;
+        background-color: #3c3c3c;
+        outline: none;
+    }
+}
+
+.btn-grey {
+    color: #fff;
+    background: #777777;
+    border: solid 1px #777777;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background: #585757;
+        }
+    }
+
+    &:focus,
+    &:focus-visible {
+        border: solid 1px #373737;
+        background-color: #373737;
+        outline: none;
+    }
+}
+
+.h2 {
+  font-family: Marcellus;
+  @include adaptiveValue("font-size", 62, 42);
+  line-height: 1.21;
+  color: #242424;
+}
+
+.sub-heading {
+    color: #c3935b;
+    font-family: Lora;
+    @include adaptiveValue("font-size", 22, 18);
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.14;
+}
