@@ -1,0 +1,95 @@
+.special-offer {
+    padding-bottom: 50px;
+    // .special-offer_btn
+    &_btn {
+    }
+
+    // .special-offer__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include adaptiveValue("gap", 120, 32);
+
+        @media (max-width:$mobile){
+             flex-direction: column; 
+        }
+    }
+
+    // .special-offer__video-wrap
+    &__video-wrap {
+        flex: 1 1 582px;
+        position: relative;
+
+        @media (max-width:$mobile){
+             flex: 1 1 auto; 
+        }
+    }
+
+    // .special-offer__video
+    &__video {
+        width: 100%;
+        height: auto;
+    }
+
+    // .special-offer__video-btn
+    &__video-btn {
+
+    }
+
+    // .special-offer__text
+    &__text {
+        flex: 1 1 470px;
+
+        @media (max-width:$mobile){
+             flex: 1 1 auto;
+             text-align: center; 
+        }
+    }
+
+    // .special-offer__sub-heading
+    &__sub-heading {
+        margin-bottom: 10px;
+    }
+
+    // .special-offer__heading
+    &__heading {
+        margin-bottom: 30px;
+
+        span {
+            @include adaptiveValue("font-size", 45, 34);
+            line-height: 1.22;
+        }
+    }
+}
+
+.video {
+
+    // .video__btn-wrp
+    &__btn-wrp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    // .video__btn
+    &__btn {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background: url('../img/play.png') center center no-repeat;
+         background-size: contain;
+         position: relative;
+        z-index: 11;
+
+        @media (max-width:$mobile){
+             width: 54px;
+             height: 54px; 
+        }
+    }
+}
