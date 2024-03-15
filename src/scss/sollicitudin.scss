@@ -1,0 +1,70 @@
+.sollicitudin {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media (max-width:$mobile){
+         padding-top: 50px; 
+         padding-bottom: 25px;
+    }
+
+    // .sollicitudin_btn
+    &_btn {
+    }
+
+    // .sollicitudin__container
+    &__container {
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 76, 24);
+
+        @media (max-width:$mobile){
+             flex-direction: column; 
+        }
+    }
+
+    // .sollicitudin__illustration
+    &__illustration {
+        flex: 1 1 50%;
+
+        img {
+            @media (max-width: 1200px){
+                width: 100%;
+                height: auto; 
+            }
+        }
+    }
+
+    // .sollicitudin__content
+    &__content {
+        flex: 1 1 50%;
+        text-align: center;
+    }
+
+    // .sollicitudin__sub-heading
+    &__sub-heading {
+        margin-bottom: 10px;
+    }
+
+    // .sollicitudin__heading
+    &__heading {
+        margin-bottom: 10px;
+
+        span {
+            @include adaptiveValue("font-size", 45, 34);
+            line-height: 1.22;
+        }
+    }
+
+    // .sollicitudin__desc
+    &__desc {
+        line-height: 1.79;
+        margin-bottom: 30px;
+    }
+
+    // .sollicitudin__btn-block
+    &__btn-block {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
