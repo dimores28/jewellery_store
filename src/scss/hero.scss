@@ -1,0 +1,63 @@
+.hero {
+    background: url(../img/Pic_Slider.png) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+
+    @media (max-width:$mobile){
+         background: #000; 
+    }
+    
+
+    // .hero__container
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    // .hero__content
+    &__content {
+        color: #ffffff;
+        width: 50%;
+        max-width: 470px;
+
+        @media (max-width:$mobile){
+             width: 100%; 
+        }
+    }
+
+    // .hero__sub-heading
+    &__sub-heading {
+        font-family: Lora;
+        @include adaptiveValue("font-size", 22, 18);
+        font-style: italic;
+        line-height: 1.14;
+        margin-bottom: 10px;
+    }
+
+    // .hero__heading
+    &__heading {
+        font-family: Marcellus;
+        @include adaptiveValue("font-size", 54, 36);
+        line-height: 1.11;
+        margin-bottom: 20px;
+    }
+
+    // .hero__desc
+    &__desc {
+        font-size: 14px;
+        line-height: 1.79;
+        margin-bottom: 35px;
+    }
+
+    // .hero__btn-block
+    &__btn-block {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    // .hero__btn
+    &__btn {
+    }
+}
