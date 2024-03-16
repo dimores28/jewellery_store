@@ -56,7 +56,7 @@
     &__heading {
         margin-bottom: 30px;
 
-        span {
+        small {
             @include adaptiveValue("font-size", 45, 34);
             line-height: 1.22;
         }

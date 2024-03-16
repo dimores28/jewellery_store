@@ -12,8 +12,8 @@
 
 .btn-white {
     color: #000;
-    background: #fff;
-    border: solid 1px #000;
+    background: transparent;
+    border: solid 1px #dfdfdf;
 
     @media (any-hover: hover) {
         &:hover {

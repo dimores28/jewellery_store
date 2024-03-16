@@ -1,0 +1,106 @@
+.discount {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    // .discount__container
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        @media (max-width:$mobile){
+             flex-direction: column-reverse; 
+             gap: 32px;
+        }
+    }
+
+    // .discount__text
+    &__text {
+        flex: 1 1 375px;
+
+        @media (max-width:$mobile){
+             flex: 1 1 auto; 
+        }
+    }
+
+    // .discount__heading
+    &__heading {
+        margin-bottom: 10px;
+
+        span {
+            color: #c3935b;
+        }
+
+        small {
+            @include adaptiveValue("font-size", 45, 34);
+            line-height: 1.22;
+        }
+    }
+
+    // .discount__desc
+    &__desc {
+        line-height: 1.79;
+        margin-bottom: 15px;
+    }
+
+    // .discount__list
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    // .discount__btn-block
+    &__btn-block {
+        display: flex;
+        gap: 10px;
+    }
+
+    // .discount__btn
+    &__btn {
+    }
+
+    // .discount__illustration
+    &__illustration {
+        flex: 1 1 390px;
+
+        @media (max-width:$mobile){
+             flex: 1 1 auto; 
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    // .list__item
+    &__item {
+        line-height: 1.79;
+        position: relative;
+        padding-left: toRem(65);
+        @media (max-width:$mobile){
+             padding-left: toRem(45); 
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: url('../img/Diamond.svg') no-repeat center center;
+            background-size: contain;
+            left: 30px;
+            top: 0;
+            @media (max-width:$mobile){
+                 left: 10px; 
+            }
+        }
+    }
+}
+

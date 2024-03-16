@@ -49,7 +49,7 @@
     &__heading {
         margin-bottom: 10px;
 
-        span {
+        small {
             @include adaptiveValue("font-size", 45, 34);
             line-height: 1.22;
         }
