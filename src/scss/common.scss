@@ -12,18 +12,19 @@
 
 .btn-white {
     color: #000;
-    background: transparent;
-    border: solid 1px #dfdfdf;
+    background: #fff;
+    border: solid 1px #fff;
 
     @media (any-hover: hover) {
         &:hover {
-            background: #dfdfdf;
+            background: #000;
+            color: #fff;
         }
     }
 
     &:focus,
     &:focus-visible {
-        border: solid 1px #242424;
+        border: solid 1px #fff;
         background-color: #777;
         outline: none;
     }
@@ -36,7 +37,8 @@
 
     @media (any-hover: hover) {
         &:hover {
-            background: #777777;
+            background: #fff;
+            color: #000;
         }
     }
 
@@ -55,7 +57,8 @@
 
     @media (any-hover: hover) {
         &:hover {
-            background: #585757;
+            background: #000;
+            border: solid 1px #000;
         }
     }
 
@@ -63,6 +66,26 @@
     &:focus-visible {
         border: solid 1px #373737;
         background-color: #373737;
+        outline: none;
+    }
+}
+
+.btn-outline {
+    color: #242424;
+    background: transparent;
+    border: solid 1px #dfdfdf;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background: #dfdfdf;
+            border: solid 1px #dfdfdf;
+        }
+    }
+
+    &:focus,
+    &:focus-visible {
+        border: solid 1px #242424;
+        background-color: #777;
         outline: none;
     }
 }

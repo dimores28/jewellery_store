@@ -24,3 +24,14 @@ player?.addEventListener('play', function() {
 player?.addEventListener('pause', function() {
     playBtnWrap.style.display = 'flex';
 })
+
+const openSearch = document.querySelector('.search__btn-open');
+openSearch?.addEventListener('click', function() {
+    document.querySelector('.header')?.classList.add('_open-search');
+});
+
+const closeSearch = document.querySelector('.search__btn-close');
+closeSearch?.addEventListener('click', function() {
+    console.log('click');
+    document.querySelector('.header')?.classList.remove('_open-search');
+});

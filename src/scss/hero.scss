@@ -59,21 +59,21 @@
 
     // .hero__btn
     &__btn {
-        &.btn-white {
-            background: #fff;
+        // &.btn-white {
+        //     background: #fff;
 
-            @media (any-hover: hover) {
-                &:hover {
-                    background: #dfdfdf;
-                }
-            }
+        //     @media (any-hover: hover) {
+        //         &:hover {
+        //             background: #dfdfdf;
+        //         }
+        //     }
 
-            &:focus,
-            &:focus-visible {
-                border: solid 1px #242424;
-                background-color: #777;
-                outline: none;
-            }
-        }
+        //     &:focus,
+        //     &:focus-visible {
+        //         border: solid 1px #242424;
+        //         background-color: #777;
+        //         outline: none;
+        //     }
+        // }
     }
 }
