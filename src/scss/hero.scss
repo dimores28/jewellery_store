@@ -20,6 +20,11 @@
         color: #ffffff;
         width: 50%;
         max-width: 470px;
+        margin-left: 98px;
+
+        @media (max-width:1024px){
+            margin-left: 0;   
+        }
 
         @media (max-width:$mobile){
              width: 100%; 
