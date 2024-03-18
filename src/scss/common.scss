@@ -105,3 +105,11 @@
     font-style: italic;
     line-height: 1.14;
 }
+
+.h3 {
+    font-family: Marcellus;
+    @include adaptiveValue("font-size", 30, 26);
+    line-height: 1.33;
+    text-align: center;
+    color: #242424;
+}

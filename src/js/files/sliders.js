@@ -20,7 +20,7 @@ EffectFade, Lazy, Manipulation
 // Базові стилі
 import "../../scss/base/swiper.scss";
 // Повний набір стилів з scss/libs/swiper.scss
-import "../../scss/libs/swiper.scss";
+// import "../../scss/libs/swiper.scss";
 // Повний набір стилів з node_modules
 // import 'swiper/css';
 
@@ -38,45 +38,62 @@ function initSliders() {
 			observeParents: true,
 			slidesPerView: 3,
 			spaceBetween: 20,
-			//autoHeight: true,
 			speed: 800,
-
-			//touchRatio: 0,
-			//simulateTouch: false,
 			loop: true,
-			//preloadImages: false,
-			//lazy: true,
-
-			/*
-			// Ефекти
-			effect: 'fade',
-			autoplay: {
-				delay: 3000,
-				disableOnInteraction: false,
-			},
-			*/
-
-			// Пагінація
-			/*
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			*/
-
-			// Скроллбар
-			/*
-			scrollbar: {
-				el: '.swiper-scrollbar',
-				draggable: true,
-			},
-			*/
 
 			// Кнопки "вліво/вправо"
 			navigation: {
 				prevEl: '.blog__btn-prev',
 				nextEl: '.blog__btn-next',
 			},
+
+			// Брейкпоінти
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				640: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				}
+			},
+
+			// Події
+			on: {
+
+			}
+		});
+	}
+
+	if (document.querySelector('.product-1__slider')) {
+		new Swiper('.product-1__slider', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 20,
+			speed: 800,
+
+			loop: true,
+
+			// Кнопки "вліво/вправо"
+			// navigation: {
+			// 	prevEl: '.blog__btn-prev',
+			// 	nextEl: '.blog__btn-next',
+			// },
 			/*
 			// Брейкпоінти
 			breakpoints: {
