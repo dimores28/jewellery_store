@@ -76,46 +76,85 @@ function initSliders() {
 		});
 	}
 
-	if (document.querySelector('.product-1__slider')) {
-		new Swiper('.product-1__slider', { // Вказуємо склас потрібного слайдера
+	if (document.querySelector('.products__slider')) {
+		new Swiper('.products__slider', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
 			modules: [Navigation],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 15,
 			speed: 800,
 
 			loop: true,
 
 			// Кнопки "вліво/вправо"
-			// navigation: {
-			// 	prevEl: '.blog__btn-prev',
-			// 	nextEl: '.blog__btn-next',
-			// },
-			/*
+			navigation: {
+				prevEl: '.products__btn-prev',
+				nextEl: '.products__btn-next',
+			},
+
 			// Брейкпоінти
 			breakpoints: {
-				640: {
+				320: {
 					slidesPerView: 1,
 					spaceBetween: 0,
 					autoHeight: true,
 				},
-				768: {
+				894: {
 					slidesPerView: 2,
-					spaceBetween: 20,
+					spaceBetween: 15,
 				},
-				992: {
+				1081: {
 					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
+					spaceBetween: 15,
 				},
 			},
-			*/
+
+			// Події
+			on: {
+
+			}
+		});
+	}
+
+	if (document.querySelector('.products__slider_2')) {
+		new Swiper('.products__slider_2', { // Вказуємо склас потрібного слайдера
+			// Підключаємо модулі слайдера
+			// для конкретного випадку
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 3,
+			spaceBetween: 15,
+			speed: 800,
+
+			loop: true,
+
+			// Кнопки "вліво/вправо"
+			navigation: {
+				prevEl: '.products__btn-prev_2',
+				nextEl: '.products__btn-next_2',
+			},
+
+			// Брейкпоінти
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0,
+					autoHeight: true,
+				},
+				894: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+				},
+				1081: {
+					slidesPerView: 3,
+					spaceBetween: 15,
+				},
+			},
+
 			// Події
 			on: {
 

@@ -1,7 +1,7 @@
 .hero {
     background: url(../img/Pic_Slider.png) no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 80px);
 
     @media (max-width:$mobile){
          background: #000; 
